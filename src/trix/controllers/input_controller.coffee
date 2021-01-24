@@ -55,5 +55,6 @@ class Trix.InputController extends Trix.BasicObject
   createLinkHTML: (href, text) ->
     link = document.createElement("a")
     link.href = href
+    link.target = "_blank"
     link.textContent = text ? href
     link.outerHTML
